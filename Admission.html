@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - ISPSC</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .h2{
+            background-color: rgba(225, 232, 247, 0.5);
+            padding: 10px 10px;
+        }
+        header {
+            background-color: #041d35; /* Dark Blue */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header .logo {
+            max-width: 90px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        nav {
+            background-color:#031424; /* Dark Blue */
+            text-align: right;
+            padding: 10px 0;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #00264d;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #003366; /* Dark Blue */
+            margin-bottom: 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+       
+        footer {
+            background-color: #031f38; /* Light Blue */
+            color: black;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        footer a {
+            color: #003366; /* Dark Blue */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background-color: #f2f2f2; /* Light Gray */
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 7px;
+                text-align: center;
+                font-size: 15px;
+            }
+            header {
+            background-color: #041d35; /* Dark Blue */
+            padding: 20px;
+            font-size: 9px;
+        }
+
+        header .logo {
+            max-width: 190px;
+        }
+        .container {
+        flex-direction: column; /* Stack items vertically */
+        padding: 1px;
+        max-width: 1000px;
+}
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://ispsc.edu.ph/file-manager/images/ispsc_logo_small.png" alt="School Logo" class="logo">
+        <h1>Ilocos Sur Polytechnic State College</h1>
+        <h3>Tagudin Campus, Tagudin Ilocos Sur</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Admission.html">Admission</a></li>
+            <li id="scrollToFooter"><a>Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section>
+            <h2 class="h2">Admission and Registration</h2>
+            <h3>A. Entrance Requirements for Incoming Freshman Undergraduate Students:</h3>
+            <ul>
+                <li>Report Card (Form 138) or High School Transcript of Record</li>
+                <li>Certification of Good Moral Character</li>
+                <li>Two identical ID pictures (2” x 2”)</li>
+                <li>Birth Certificate issued by the PSA</li>
+                <li>Satisfactory result of a College Admission Test administered by the college</li>
+            </ul>
+
+            <h3>B. Entrance Requirements for Transferee Undergraduate Students:</h3>
+            <ul>
+                <li>Transfer credentials including certified true copy of grades</li>
+                <li>Certificate of Good Moral Character</li>
+                <li>Two identical ID pictures (2” x 2”)</li>
+                <li>Birth Certificate issued by PSA</li>
+            </ul>
+
+            <p>Note: No student shall be denied admission due to nationality, race, age, gender, religion, or other factors, as long as all admission requirements are met.</p>
+        </section>
+
+        <section>
+            <h2 class="h2">School Fees and Other Charges</h2>
+            <p>School fees and other charges are based on the approved schedule by the Board of Trustees in accordance with CHED regulations. Information on tuition and fees is regularly updated by the Accounting Office and posted within the campus.</p>
+        </section>
+    </div>
+
+  <footer id="footer">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p>Address: Quirino Tagudin, Ilocos Sur</p>
+            <p>Email: registrarispsc@yahoo.com</p>
+            <p><a href="https://www.facebook.com/ISPSCRegistrarsOffice/" target="_blank">Registrar's Office Page</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('scrollToFooter').addEventListener('click', function () {
+            document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
